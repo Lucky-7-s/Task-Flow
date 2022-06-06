@@ -4,7 +4,6 @@ This app was created to help you manage and acheive your tasks.
 
 ## Project Manager Rotation
 Monday - Erin Cobb <br>
-
 Tuesday - Shadi Isshac <br>
 Wednesday- Vianney Ledesma <br>
 Thursday - Erin Cobb
