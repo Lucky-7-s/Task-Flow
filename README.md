@@ -37,27 +37,11 @@ Wireframing Resources:
 - [Front-End React Architecture](https://ibb.co/MMdHT8f)
 
 ## Backend Route Endpoints
-- [Route Structure and Endpoints](https://ibb.co/ZMynnZF)
+- [Route Structure and Endpoints](add Link)
 
 ## DB Architecture
 - Back End Schema and Model Description
-```
-Users [
-        {
-            userName: "Shandi",
-            id: "230497231509879",
-            taskList: [
-                {
-                    task: "Complete Homework",
-                    status: "red",
-                    _id: 43-83408
-
-                }
-               
-            ]
-        }
-    ]
-```
+- (paste code snippet)
 
 
 ## Time/Priority Matrix 
@@ -104,15 +88,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Hamburger | H | 1hr | hr |
-| Project Previews | H | 3hr | hr |
-| Regular Nav | H | 1hr | hr |  
-| Adding Form | H | 1.5hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
-| Responsive | H | 3hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 15.5hrs| hrs |
+| Home page, NAV bar, Hamburger | H | 2.5hrs | hr |
+| Task form, buttons | H | 2.5hrs | hr |
+| User Model | H | 2hr | hr |  
+| Task Model | H | 2hr |  hr | 
+| Back end CRUD | H | 2.5hrs | hr|
+| Router 1 & 2 | H | 2hrs|  hr | 
+| Front end CRUD | H | 2.5hrs | hr | hr |
+| Team page | H | 2hrs |  hr |
+| Deploy back end to Heroku | H | 2hrs |  hr |
+| Deploy front end to Github | H | 2hrs |  hr |
+| Total | H | 24hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
