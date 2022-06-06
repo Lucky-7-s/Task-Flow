@@ -41,7 +41,23 @@ Wireframing Resources:
 
 ## DB Architecture
 - Back End Schema and Model Description
-- (paste code snippet)
+```
+Users [
+        {
+            userName: "Shandi",
+            id: "230497231509879",
+            tasks: [
+                {
+                    task: "Complete Homework",
+                    status: "red",
+                    _id: 43-83408
+
+                }
+               
+            ]
+        }
+    ]
+```
 
 
 ## Time/Priority Matrix 
