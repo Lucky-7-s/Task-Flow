@@ -72,8 +72,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Anything else that is not MVP
 
 ## Functional Components
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into smaller components.  Try and capture what logic would need to be defined if the game was broken down into the following categories.
+- Home
+    - App Landing Page
+- Login
+    - Allows users to log in and manage their tasks on the site.
+- Tasks
+    - Displays list of tasks user has made
+- Signup
+    - Allows users to register on the site and begin creating tasks
+- OurTeam
+    - Displays information about the website's development team 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the portfolio. Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the portfolio must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
@@ -102,7 +110,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 20hrs| hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+- Cors
+- Dotenv
+- Express
+- Github Pages
+- Heroku
+- MongoDB
+- Mongoose
+- Node
+- React, React Router
 
 ## Code Snippet
 
