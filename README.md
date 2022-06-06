@@ -4,6 +4,7 @@ This app was created to help you manage and acheive your tasks.
 
 ## Project Manager Rotation
 Monday - Erin Cobb
+/
 Tuesday - Shadi Isshac
 Wednesday- Vianney Ledesma
 Thursday - Erin Cobb
@@ -37,11 +38,26 @@ Wireframing Resources:
 - [Front-End React Architecture](https://ibb.co/MMdHT8f)
 
 ## Backend Route Endpoints
-- [Route Structure and Endpoints](add Link)
+- [Route Structure and Endpoints](https://ibb.co/ZMynnZF)
 
 ## DB Architecture
 - Back End Schema and Model Description
-- (paste code snippet)
+```
+Users [
+        {
+            userName: "Shandi",
+            id: "230497231509879",
+            taskList: [
+                {
+                    task: "Complete Homework",
+                    status: "red",
+                    _id: 43-83408
+                }
+               
+            ]
+        }
+    ]
+```
 
 
 ## Time/Priority Matrix 
