@@ -43,7 +43,7 @@ Wireframing Resources:
 ```
 Users [
         {
-            userName: "Shandi",
+            userName: "Sarah",
             id: "230497231509879",
             taskList: [
                 {
