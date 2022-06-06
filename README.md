@@ -40,7 +40,7 @@ Wireframing Resources:
 - [Route Structure and Endpoints](https://ibb.co/ZMynnZF)
 
 ## DB Architecture
-- ```
+```
 Users [
         {
             userName: "Shandi",
