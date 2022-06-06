@@ -1,27 +1,27 @@
 # Task-Flow
 ## Project Overview
+This app was created to help you manage and acheive your tasks.
 
 ## Project Manager Rotation
+Monday - Erin Cobb
+Tuesday - Shadi Isshac
+Wednesday- Vianney Ledesma
+Thursday - Erin Cobb
 
-## Project Schedule
-
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+## Project Schedule  
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 1| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
-|Day 5| Final Touches | Incomplete
-|Day 6| Present | Incomplete
+|Day 1| Complete Planning, TaskFlow ReadMe, Approval from Instructors| Incomplete
+|Day 2| Complete Front-end MVP, Complete Back-end MVP| Incomplete
+|Day 3| Run app locally, Deploy MVP | Incomplete
+|Day 4| Troubleshooting, Stretch goals| Incomplete
+|Day 5| Present | Incomplete
 
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This tool was created to assist you in organizing and accomplishing your tasks.
 
 ## Wireframes
 Front-End:
