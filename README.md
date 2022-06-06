@@ -107,7 +107,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Deploy front end to Github | H | 2hrs |  hr |
 | Deploy back end to Heroku | H | 2hrs |  hr |
 
-| Total | H | 24hrs| hrs |
+| Total | H | 32.5hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
