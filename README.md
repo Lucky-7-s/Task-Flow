@@ -74,7 +74,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 ## Functional Components
 - Home
     - App Landing Page
-- NavBar
+- Nav
     - Navigation Menu
 - Login
     - Allows users to log in and manage their tasks on the site.
@@ -90,16 +90,23 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Home page, NAV bar, Hamburger | H | 2.5hrs | hr |
-| Signup form, Task form, buttons | H | 2.5hrs | hr |
-| User Model | H | 2hr | hr |  
-| Task Model | H | 2hr |  hr | 
-| Back end CRUD | H | 2.5hrs | hr|
-| Router 1 & 2 | H | 2hrs|  hr | 
-| Front end CRUD | H | 2.5hrs | hr | hr |
-| Team page | H | 2hrs | hr |
-| Deploy back end to Heroku | H | 2hrs |  hr |
+| Home | H | 2hrs | hr |
+| Nav | H | 2hrs | hr |
+| Login | H | 2hrs | hr |
+| Tasks| H | 2hrs | hr |
+| SignUp | H | 2hrs | hr |
+| Our Team | H | 2hrs | hr |
+| Routes 1 & 2 | H | 2hrs |  hr | 
+| Front end CRUD functionality | H | 2.5hrs | hr | hr |
+| Seed User Model | H | 2hrs | hr |  
+| Seed Task Model | H | 2hrs | hr |
+| Add Controller | H | 2hrs | hr |
+| Add Connection.js | H | 2hrs | hr |
+| Create Cluster | H | 2hrs | hr
+| Back end CRUD | H | 2.5hrs | hr| 
 | Deploy front end to Github | H | 2hrs |  hr |
+| Deploy back end to Heroku | H | 2hrs |  hr |
+
 | Total | H | 24hrs| hrs |
 
 #### PostMVP
