@@ -25,16 +25,16 @@ This tool was created to assist you in organizing and accomplishing your tasks.
 
 ## Wireframes
 Front-End:
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
+- [Mobile](https://ibb.co/ZYPHq5m)
+- [Desktop](https://ibb.co/ZYPHq5m)
 
 Wireframing Resources:
 
-- [Moqups](Add link)
-- [Procreate](Add link)
+- [Moqups](https://moqups.com/)
+- [Procreate](https://procreate.art/)
 
 ## React Architecture
-- [Front-End React Architecture](add Link)
+- [Front-End React Architecture](https://ibb.co/MMdHT8f)
 
 ## Backend Route Endpoints
 - [Route Structure and Endpoints](add Link)
