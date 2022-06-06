@@ -72,10 +72,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Anything else that is not MVP
 
 ## Functional Components
-- Intro
+- Home
     - App Landing Page
 - NavBar
--     - Navigation Menu
+    - Navigation Menu
 - Login
     - Allows users to log in and manage their tasks on the site.
 - Tasks
