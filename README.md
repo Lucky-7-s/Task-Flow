@@ -26,7 +26,7 @@ This tool was created to assist you in organizing and accomplishing your tasks.
 ## Wireframes
 Front-End:
 - [Mobile](https://ibb.co/ZYPHq5m)
-- [Desktop](https://ibb.co/CwvrXhp)
+- [Desktop](https://ibb.co/n0kHK23)
 
 Wireframing Resources:
 
