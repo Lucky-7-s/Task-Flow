@@ -3,9 +3,9 @@
 This app was created to help you manage and acheive your tasks.
 
 ## Project Manager Rotation
-Monday - Erin Cobb <br>
-Tuesday - Shadi Isshac <br>
-Wednesday- Vianney Ledesma <br>
+Monday - Erin Cobb
+Tuesday - Shadi Isshac
+Wednesday- Vianney Ledesma
 Thursday - Erin Cobb
 
 ## Project Schedule  
@@ -37,26 +37,11 @@ Wireframing Resources:
 - [Front-End React Architecture](https://ibb.co/MMdHT8f)
 
 ## Backend Route Endpoints
-- [Route Structure and Endpoints](https://ibb.co/ZMynnZF)
+- [Route Structure and Endpoints](add Link)
 
 ## DB Architecture
 - Back End Schema and Model Description
-```
-Users [
-        {
-            userName: "Shandi",
-            id: "230497231509879",
-            taskList: [
-                {
-                    task: "Complete Homework",
-                    status: "red",
-                    _id: 43-83408
-                }
-               
-            ]
-        }
-    ]
-```
+- (paste code snippet)
 
 
 ## Time/Priority Matrix 
@@ -104,7 +89,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
 | Home page, NAV bar, Hamburger | H | 2.5hrs | hr |
-| Task form, buttons | H | 2.5hrs | hr |
+| Signup form, Task form, buttons | H | 2.5hrs | hr |
 | User Model | H | 2hr | hr |  
 | Task Model | H | 2hr |  hr | 
 | Back end CRUD | H | 2.5hrs | hr|
