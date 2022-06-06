@@ -12,7 +12,7 @@ Thursday - Erin Cobb <br>
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Complete Planning, TaskFlow ReadMe, Approval from Instructors| Incomplete
+|Day 1| Complete Planning, TaskFlow ReadMe, Approval from Instructors| Complete
 |Day 2| Complete Front-end MVP, Complete Back-end MVP| Incomplete
 |Day 3| Run app locally, Deploy MVP | Incomplete
 |Day 4| Troubleshooting, Stretch goals| Incomplete
