@@ -110,6 +110,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 5hrs| hrs |
 
 ## Additional Libraries
+- Bootstrap
 - Cors
 - Dotenv
 - Express
