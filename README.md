@@ -97,7 +97,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Back end CRUD | H | 2.5hrs | hr|
 | Router 1 & 2 | H | 2hrs|  hr | 
 | Front end CRUD | H | 2.5hrs | hr | hr |
-| Team page | H | 2hrs |  hr |
+| Team page | H | 2hrs | hr |
 | Deploy back end to Heroku | H | 2hrs |  hr |
 | Deploy front end to Github | H | 2hrs |  hr |
 | Total | H | 24hrs| hrs |
@@ -110,7 +110,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 5hrs| hrs |
 
 ## Additional Libraries
-- Bootstrap
 - Cors
 - Dotenv
 - Express
