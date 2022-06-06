@@ -37,7 +37,7 @@ Wireframing Resources:
 - [Front-End React Architecture](https://ibb.co/MMdHT8f)
 
 ## Backend Route Endpoints
-- [Route Structure and Endpoints](add Link)
+- [Route Structure and Endpoints](https://ibb.co/ZMynnZF)
 
 ## DB Architecture
 - Back End Schema and Model Description
@@ -46,7 +46,7 @@ Users [
         {
             userName: "Shandi",
             id: "230497231509879",
-            tasks: [
+            taskList: [
                 {
                     task: "Complete Homework",
                     status: "red",
