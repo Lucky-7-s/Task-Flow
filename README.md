@@ -1,6 +1,8 @@
 # Task-Flow
 ## Project Overview
 
+## Project Manager Rotation
+
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
@@ -22,16 +24,24 @@ You are **responsible** for scheduling time with your squad to seek approval for
 Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
 ## Wireframes
-
-Include images of wireframe with a description of the specific wireframe.   
-
+Front-End:
 - [Mobile](https://i.imgur.com/P3iBEZf.jpg)
 - [Desktop](https://i.imgur.com/xpOWo0E.jpg)
 
 Wireframing Resources:
 
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
+- [Moqups](Add link)
+- [Procreate](Add link)
+
+## React Architecture
+- [Front-End React Architecture](add Link)
+
+## Backend Route Endpoints
+- [Route Structure and Endpoints](add Link)
+
+## DB Architecture
+- Back End Schema and Model Description
+- (paste code snippet)
 
 
 ## Time/Priority Matrix 
