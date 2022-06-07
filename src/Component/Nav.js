@@ -1,26 +1,28 @@
-import React from 'react'
-import { useState } from 'react'
-
-
+import React from "react";
+import { useState } from "react";
+import { Route, Link, Routes } from "react-router-dom";
 
 export const Nav = () => {
-
-    
-
   return (
     <nav>
-    <ul>
+      <ul>
         <h1>Task Flow</h1>
-        <li>Home</li>
-        <li>Login</li>
-        <li>Signup</li>
-        <li>Tasks</li>
-        <li>About</li>
-    </ul>
+        <li>
+          <Link to="/Homepage"> Home </Link>
+        </li>
+        <li>
+          <Link to="/User"> Login </Link>
+        </li>
+        <li>
+          <Link to="/CreateUser"> Signup </Link>
+        </li>
+        <li>
+          <Link to="/user/:id"> Tasks </Link>
+        </li>
+        <li>
+          <Link to="/OurTeam"> About </Link>
+        </li>
+      </ul>
     </nav>
-  )
-}
-
-
-
-
+  );
+};
