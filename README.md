@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# Task-Flow
+## Project Overview
+This app was created to help you manage and acheive your tasks.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Manager Rotation
+Monday - Erin Cobb <br>
+Tuesday - Shadi Isshac <br>
+Wednesday- Vianney Ledesma <br>
+Thursday - Erin Cobb <br>
 
-## Available Scripts
+## Project Schedule  
 
-In the project directory, you can run:
+|  Day | Deliverable | Status
+|---|---| ---|
+|Day 1| Complete Planning, TaskFlow ReadMe, Approval from Instructors| Complete
+|Day 2| Complete Front-end MVP, Complete Back-end MVP| Incomplete
+|Day 3| Run app locally, Deploy MVP | Incomplete
+|Day 4| Troubleshooting, Stretch goals| Incomplete
+|Day 5| Present | Incomplete
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This tool was created to assist you in organizing and accomplishing your tasks.
 
-### `npm test`
+## Wireframes
+Front-End:
+- [Mobile](https://ibb.co/ZYPHq5m)
+- [Desktop](https://ibb.co/n0kHK23)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Wireframing Resources:
 
-### `npm run build`
+- [Moqups](https://moqups.com/)
+- [Procreate](https://procreate.art/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## React Architecture
+- [Front-End React Architecture](https://ibb.co/MMdHT8f)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Backend Route Endpoints
+- [Route Structure and Endpoints](https://ibb.co/ZMynnZF)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## DB Architecture
+```
+Users [
+        {
+            userName: "Sarah",
+            id: "230497231509879",
+            taskList: [
+                {
+                    task: "Complete Homework",
+                    status: "red",
+                    _id: 43-83408
+                }
+               
+            ]
+        }
+    ]
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Time/Priority Matrix 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Link](https://i.imgur.com/77vEHrg.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Now draw a vertical line on the y axis.  The top of this line should have `High` and the bottom `Low`.  This line will be used to assign a priority to to each feature you wish to include in the project.  
 
-## Learn More
+Now create a separate list starting with A and assign it one of the features.  Continue to assign each feature a letter.  Once complete add each letter to the matrix assigning based on what your feel it's prioirty is an how long it will take to implement. If any one feature takes longer than 2hrs to complete than break it down into smaller tasks and reassign them a new letter. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once complete tally up the time and determine how long the project will take to complete. Now break those features into MVP and PostMVP so you can guarantee you will have a fully functioning project to demo. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### MVP/PostMVP - 5min
 
-### Code Splitting
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### MVP (examples)
 
-### Analyzing the Bundle Size
+- Pull data using google json api
+- Render data on page 
+- Allow user to choose favorites 
+- Save their choices in firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### PostMVP 
 
-### Making a Progressive Web App
+- Anything else that is not MVP
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Functional Components
+- Home
+    - App Landing Page
+- Nav
+    - Navigation Menu
+- Login
+    - Allows users to log in and manage their tasks on the site.
+- Tasks
+    - Displays list of tasks user has made
+- Signup
+    - Allows users to register on the site and begin creating tasks
+- OurTeam
+    - Displays information about the website's development team 
 
-### Advanced Configuration
+Time frames are also key in the development cycle.  You have limited time to code all phases of the portfolio. Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the portfolio must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### MVP
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | 
+| Home | H | 2hrs | hr |
+| Nav | H | 2hrs | hr |
+| Login | H | 2hrs | hr |
+| Tasks| H | 2hrs | hr |
+| Our Team | H | 2hrs | hr |
+| Routes 1 & 2 | H | 2hrs |  hr | 
+| Front end CRUD functionality | H | 2.5hrs | hr | hr |
+| Seed User Model | H | 2hrs | hr |  
+| Seed Task Model | H | 2hrs | hr |
+| Add Controller | H | 2hrs | hr |
+| Add Connection.js | H | 2hrs | hr |
+| Create Cluster | H | 2hrs | hr
+| Back end CRUD | H | 2.5hrs | hr| 
+| Deploy front end to Github | H | 2hrs |  hr |
+| Deploy back end to Heroku | H | 2hrs |  hr |
 
-### Deployment
+| Total | H | 30.5hrs| hrs |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### PostMVP
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | 
+| Status Bar | M | 3hr | hr | hr |
+| Logo | L | 2hr | hr | hr |
+| SignUp | H | 2hrs | hr |
+| Total | H | 7.5hrs| hrs |
 
-### `npm run build` fails to minify
+## Additional Libraries
+- Cors
+- Dotenv
+- Express
+- Github Pages
+- Heroku
+- MongoDB
+- Mongoose
+- Node
+- React, React Router
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Code Snippet
+
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
+
+## Issues and Resolutions
+ Use this section to list of all major issues encountered and their resolution.
+
+#### SAMPLE.....
+**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
+**RESOLUTION**: Missing comma after first object in sources {} object
+>>>>>>> 14f2e8fcfed4aef0221766cc2004c5cfa3b3e68c
