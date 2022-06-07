@@ -11,13 +11,13 @@ export const Nav = () => {
           <Link to="/Homepage"> Home </Link>
         </li>
         <li>
-          <Link to="/User"> Login </Link>
+          <Link to="/Login"> Login </Link>
         </li>
         <li>
           <Link to="/CreateUser"> Signup </Link>
         </li>
         <li>
-          <Link to="/user/:id"> Tasks </Link>
+          <Link to="/user/:userName"> Tasks </Link>
         </li>
         <li>
           <Link to="/OurTeam"> About </Link>

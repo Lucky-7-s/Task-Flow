@@ -1,15 +1,26 @@
-import React from 'react'
+import React from "react";
+import { useState } from "react";
+import { Route, Link, Routes } from "react-router-dom";
 
 export const Login = () => {
-  return (
+  const [userName, setUserName] = useState("");
+  const [submitUserName, setSubmitUserName] = useState();
+
+  const handleChange = (event) => {
+    setUserName(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    setSubmitUserName(userName);
+
+    return (
       <div>
-    <form>
-      <input
-        type="text"
-        placeholder= "Username"
-        />
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="Username" onChange={handleChange} />
+          <Link to={`/user/:${userName}`}> this</Link>
         </form>
-        <button>Login</button>
-        </div>
-  )
-}
+      </div>
+    );
+  };
+};
+//<input type="Submit" value="Login"/>

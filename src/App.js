@@ -6,7 +6,7 @@ import { Home } from "./Component/Home";
 import { About } from "./Component/About";
 import { Tasks } from "./Component/Tasks";
 import { Login } from "./Component/Login";
-import { Route, Link, Routes } from "react-router";
+import { Route, Link, Routes } from "react-router-dom";
 const bootstrap = require("bootstrap");
 
 function App() {
@@ -15,9 +15,9 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/Homepage" element={<Home />} />
-        <Route path="/User" element={<Login />} />
+        <Route path="/Login" element={<Login />} />
         <Route path="/CreateUser" element={<Signup />} />
-        <Route path="/user/:id" element={<Tasks />} />
+        <Route path="/user/:userName" element={<Tasks />} />
         <Route path="/OurTeam" element={<About />} />
       </Routes>
     </div>

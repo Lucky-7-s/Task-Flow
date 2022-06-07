@@ -11,10 +11,22 @@ export const Signup = () => {
 
   const handleSubmit = (event) => {
     setSubmitUserName({
-    userName: `${userName}`,
-    tasks: []
-  })
+      userName: `${userName}`,
+    });
 
+    fetch(`http://localhost3000/user`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(submitUserName),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(`it worked`, data))
+      .catch(() => {
+        console.log("Error:");
+      });
+  };
 
   return (
     <div>
