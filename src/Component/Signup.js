@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { apiUrls } from "../apiUrls.js";
 
 export const Signup = () => {
   const [userName, setUserName] = useState("");
@@ -14,7 +15,7 @@ export const Signup = () => {
       userName: `${userName}`,
     });
 
-    fetch(`http://localhost3000/user`, {
+    fetch({ apiUrls } / user, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
