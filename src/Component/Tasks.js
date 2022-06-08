@@ -2,18 +2,19 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { apiUrls } from "../apiUrls.js";
 
 //Begin the Component and Export
 export const Tasks = () => {
   //Variables & useStates
   const [userInput, setUserInput] = useState("");
-  const [task, setTask] = useState("");
+  const setTask = "";
   const [taskList, setTaskList] = useState([]);
   let { user } = useParams();
 
   //Get the Task List of a specific User and set to taskList
   useEffect(() => {
-    fetch(`http://localhost:3000/user/${user}`)
+    fetch(`${apiUrls}/user/${user}`)
       .then((response) => response.json())
       .then((data) => setTaskList(user.tasks))
       .catch(() => console.log("Fetch not working"));
@@ -21,7 +22,8 @@ export const Tasks = () => {
 
   //Delete Function for removing an item from a User's list
   const deleteItem = (i) => {
-    fetch(`http://localhost:3000/user/${user}/{i.id}`, {
+    `${apiUrls}/user/${user}`;
+    fetch(`${apiUrls}/tasks/task/${i.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -49,31 +51,30 @@ export const Tasks = () => {
     setUserInput(event.target.value);
   };
   //Add a task to a user's tasks array
-  const addTask = () => {
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      const submitObject = {
-        task: albumName,
-        status: "red",
-      };
 
-      let current = [...displayData];
-
-      fetch(`${apiUrl}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(submitObject),
-      })
-        .then((response) => response.json())
-        .then((data) => current.push(data.vinyl))
-        .then((data) => console.log(`it worked`, data))
-        .then(() => setDisplayData(current))
-        .catch(() => {
-          console.log("Error:");
-        });
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setTask = {
+      task: userInput,
+      status: "red",
     };
+
+    let current = [...taskList];
+
+    fetch(`${apiUrls}/user/${user}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(setTask),
+    })
+      .then((response) => response.json())
+      .then((data) => current.push(data))
+      .then((data) => console.log(`it worked`, data))
+      .then(() => setTaskList(current))
+      .catch(() => {
+        console.log("Error:");
+      });
   };
 
   return (
