@@ -2,13 +2,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { apiUrls } from "../apiUrls.js";
+import apiUrls from "../apiUrls.js";
 
 //Begin the Component and Export
 export const Tasks = () => {
   //Variables & useStates
   const [userInput, setUserInput] = useState("");
-  const setTask = "";
+  let setTask = "";
   const [taskList, setTaskList] = useState([]);
   let { user } = useParams();
 
@@ -22,7 +22,6 @@ export const Tasks = () => {
 
   //Delete Function for removing an item from a User's list
   const deleteItem = (i) => {
-    `${apiUrls}/user/${user}`;
     fetch(`${apiUrls}/tasks/task/${i.id}`, {
       method: "DELETE",
       headers: {
@@ -82,8 +81,8 @@ export const Tasks = () => {
       <h3>Fully immersed. Energized focus. Welcome to the Flow.</h3>
       {tasksListed}
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Username" onChange={handleChange} />
-        <input type="submit" />
+        <input type="text" placeholder="New Task" onChange={handleChange} />
+        <input type="submit" value="Add Task" />
       </form>
     </div>
   );

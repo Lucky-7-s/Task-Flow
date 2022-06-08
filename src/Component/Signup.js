@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { apiUrls } from "../apiUrls.js";
+import { Route, Link, Routes } from "react-router-dom";
 
 export const Signup = () => {
   const [userName, setUserName] = useState("");
@@ -12,10 +13,10 @@ export const Signup = () => {
 
   const handleSubmit = (event) => {
     setSubmitUserName({
-      userName: `${userName}`,
+      username: `${userName}`,
     });
 
-    fetch({ apiUrls } / user, {
+    fetch(`{ apiUrls }/user`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +35,9 @@ export const Signup = () => {
       <h2>Fully immersed. Energized focus. Welcome to the flow.</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Username" onChange={handleChange} />
-        <input type="submit" />
+        <Link to={`/Login`}>
+          <input type="submit" value="Sign Up" />
+        </Link>
       </form>
     </div>
   );
