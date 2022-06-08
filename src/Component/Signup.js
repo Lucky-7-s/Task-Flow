@@ -1,22 +1,25 @@
 import React from "react";
 import { useState } from "react";
-import { apiUrls } from "../apiUrls.js";
+import apiUrl from "../apiUrls.js";
 import { Route, Link, Routes } from "react-router-dom";
 
 export const Signup = () => {
   const [userName, setUserName] = useState("");
-  const [submitUserName, setSubmitUserName] = useState({});
+  let submitUserName = "";
 
   const handleChange = (event) => {
     setUserName(event.target.value);
   };
 
   const handleSubmit = (event) => {
-    setSubmitUserName({
-      username: `${userName}`,
-    });
+    event.preventDefault();
+    let submitUserName = {
+      username: `${userName}`
+    };
 
-    fetch(`{ apiUrls }/user`, {
+    console.log(submitUserName);
+
+    fetch(`${apiUrl}/user`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,9 +38,9 @@ export const Signup = () => {
       <h2>Fully immersed. Energized focus. Welcome to the flow.</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Username" onChange={handleChange} />
-        <Link to={`/Login`}>
-          <input type="submit" value="Sign Up" />
-        </Link>
+        {/* <Link to={`/Login`}> */}
+        <input type="submit" value="Sign Up" />
+        {/* </Link> */}
       </form>
     </div>
   );

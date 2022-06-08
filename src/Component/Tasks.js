@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import apiUrls from "../apiUrls.js";
+import apiUrl from "../apiUrls.js";
 
 //Begin the Component and Export
 export const Tasks = () => {
@@ -10,19 +10,21 @@ export const Tasks = () => {
   const [userInput, setUserInput] = useState("");
   let setTask = "";
   const [taskList, setTaskList] = useState([]);
-  let { user } = useParams();
+  let userName = useParams();
+  
 
   //Get the Task List of a specific User and set to taskList
   useEffect(() => {
-    fetch(`${apiUrls}/user/${user}`)
+    fetch(`${apiUrl}/user/${userName.userName}`)
       .then((response) => response.json())
-      .then((data) => setTaskList(user.tasks))
+      .then((data)=>console.log(data))
+      .then((data) => setTaskList(data[0].tasks))
       .catch(() => console.log("Fetch not working"));
   }, []);
 
   //Delete Function for removing an item from a User's list
   const deleteItem = (i) => {
-    fetch(`${apiUrls}/tasks/task/${i.id}`, {
+    fetch(`${apiUrl}/tasks/task/${i.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -49,18 +51,19 @@ export const Tasks = () => {
   const handleChange = (event) => {
     setUserInput(event.target.value);
   };
+  
   //Add a task to a user's tasks array
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setTask = {
       task: userInput,
-      status: "red",
+      status: "yellow"
+      
     };
 
     let current = [...taskList];
 
-    fetch(`${apiUrls}/user/${user}`, {
+    fetch(`${apiUrl}/user/${userName}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -72,7 +75,7 @@ export const Tasks = () => {
       .then((data) => console.log(`it worked`, data))
       .then(() => setTaskList(current))
       .catch(() => {
-        console.log("Error:");
+        console.log("error:");
       });
   };
 
