@@ -12,15 +12,16 @@ export const Login = () => {
 
   const handleSubmit = (event) => {
     setSubmitUserName(userName);
-
-    return (
-      <div>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Username" onChange={handleChange} />
-          <Link to={`/user/:${userName}`}> this</Link>
-        </form>
-      </div>
-    );
   };
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Username" onChange={handleChange} />
+        <Link to={`User/${userName}`}>
+          <input type="submit" placeholder="Username" />
+        </Link>
+      </form>
+    </div>
+  );
 };
 //<input type="Submit" value="Login"/>

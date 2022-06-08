@@ -8,7 +8,7 @@ export const Nav = () => {
       <ul>
         <h1>Task Flow</h1>
         <li>
-          <Link to="/Homepage"> Home </Link>
+          <Link to="/"> Home </Link>
         </li>
         <li>
           <Link to="/Login"> Login </Link>
