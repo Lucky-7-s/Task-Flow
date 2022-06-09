@@ -120,7 +120,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Deploy front end to Github | H | 2hrs |  hr |
 | Deploy back end to Heroku | H | 2hrs |  hr |
 
-| Total | H | 30.5hrs| hrs |
+| Total | H | 31hrs| hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
@@ -128,7 +128,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Status Bar | M | 3hr | hr | hr |
 | Logo | L | 2hr | hr | hr |
 | SignUp | H | 2hrs | hr |
-| Total | H | 7.5hrs| hrs |
+| Total | H | 7hrs| hrs |
 
 ## Additional Libraries
 - Cors
