@@ -8,7 +8,7 @@ import apiUrl from "../apiUrls.js";
 export const Tasks = () => {
   //Variables & useStates
   const [userInput, setUserInput] = useState("");
-  let setTask = "";
+  const [newTask, setNewTask] =useState() 
   const [taskList, setTaskList] = useState([]);
   let userName = useParams();
   
@@ -17,14 +17,13 @@ export const Tasks = () => {
   useEffect(() => {
     fetch(`${apiUrl}/user/${userName.userName}`)
       .then((response) => response.json())
-      .then((data)=>console.log(data))
-      .then((data) => setTaskList(data[0].tasks))
+      .then((data)=>console.log(data[0].tasks))
       .catch(() => console.log("Fetch not working"));
   }, []);
 
   //Delete Function for removing an item from a User's list
   const deleteItem = (i) => {
-    fetch(`${apiUrl}/tasks/task/${i.id}`, {
+    fetch(`${apiUrl}/user/${userName.userName}/task/${i}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -39,11 +38,13 @@ export const Tasks = () => {
 
   //Map through a users Tasks and return them as List Items with a delete button
   const tasksListed = taskList.map((i) => {
+    console.log(i.tasks[0].task)
     return (
       <li>
-        {i.status}
-        {i.task}
-        <button onClick={deleteItem(i)}>Delete</button>
+        Hi
+        {i._id}
+        {i.tasks}
+        <button onClick={() => deleteItem(i.user._id)}>Delete</button>
       </li>
     );
   });
@@ -55,20 +56,25 @@ export const Tasks = () => {
   //Add a task to a user's tasks array
   const handleSubmit = (event) => {
     event.preventDefault();
-    setTask = {
-      task: userInput,
-      status: "yellow"
+    setNewTask({
+      "tasks": [
+        {
+          "task": "new task",
+          "status": "red"
+        }
+      ]
       
-    };
+    });
 
     let current = [...taskList];
+    console.log(newTask)
 
-    fetch(`${apiUrl}/user/${userName}`, {
-      method: "POST",
+    fetch(`${apiUrl}/user/${userName.userName}`, {
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(setTask),
+      body: JSON.stringify(newTask),
     })
       .then((response) => response.json())
       .then((data) => current.push(data))
