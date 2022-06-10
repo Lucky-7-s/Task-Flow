@@ -17,7 +17,7 @@ export const Login = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Username" onChange={handleChange} />
-        <Link to={`../user/${userName}`}>
+        <Link to={`../user/${userName}/tasks`}>
           <input type="submit" placeholder="Username" />
         </Link>
       </form>

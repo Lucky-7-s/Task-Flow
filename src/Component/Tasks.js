@@ -8,13 +8,23 @@ import apiUrl from "../apiUrls.js";
 export const Tasks = () => {
   //Variables & useStates
   const [userInput, setUserInput] = useState('');
-  const [newTask, setNewTask] = useState([]);
+  const [newTask, setNewTask] = useState(null);
+  const [taskId, setTaskId] = useState('');
   // const [taskList, setTaskList] = useState(null);
   let userName = useParams();
 
   const handleChange = (event) => {
     setUserInput(event.target.value);
   };
+
+  // const pushTask = (appId) => {
+  //   fetch(`${apiUrl}/user/${userName.userName}/tasks/${appId}`, {
+  //     method: 'PATCH',
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   })
+  // }
 
   //Add a task to a user's tasks array
   const handleSubmit = (event) => {
@@ -36,18 +46,21 @@ export const Tasks = () => {
       .then((response) => response.json())
       // .then((data) => current.push(data))
       .then((data) => {
-        console.log(`it worked`, data)
+        console.log(`it worked`, data._id)
+        const appId = (data._id);
       })
-      // .then(() => setTaskList(current))
-      .catch(() => {
-        console.log("error:");
+      // .then((appId) => {
+      //   pushTask(appId)
+      // })
+      .catch((err) => {
+        console.log(err);
       });
   };
 
 
   //Get the Task List of a specific User and set to taskList
   useEffect(() => {
-    fetch(`${apiUrl}/user/${userName.userName}/tasks`)
+    fetch(`${apiUrl}/tasks`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data[0].tasks)
@@ -59,7 +72,7 @@ export const Tasks = () => {
 
   //Delete Function for removing an item from a User's list
   const deleteItem = (i) => {
-    fetch(`${apiUrl}/user/${userName.userName}/task/${i}`, {
+    fetch(`${apiUrl}/tasks/${i}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -88,19 +101,19 @@ export const Tasks = () => {
   // console.log(newTask[0].tasks)
 
   // let taskList = newTask[0].tasks;
-  // taskList.map((i) => {
-  //   return (
-  //     <li>{i.task}</li>
-  //   )
-  // })
+
 
   let displayTasks = '';
   if (newTask !== null) {
-    displayTasks = (
-      <div>
-        <li>{newTask}</li>
-      </div>
-    )
+    displayTasks =
+      newTask.map((i) => {
+        return (
+          <li>{i.task}
+            <button onClick={() => deleteItem(i._id)}>Delete</button>
+            <button>Edit</button>
+          </li>
+        )
+      })
   }
 
   return (
